@@ -27,5 +27,5 @@ window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.remove("dark-mode");
         themeIcon.classList.remove("fa-sun");
         themeIcon.classList.add("fa-moon");
-    }
+        }
 });
