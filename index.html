@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Robótica e IoT</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-robot"></i> Portal de Robótica e IoT
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="videos.html">Vídeos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="graficos.html">Gráficos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                    <!-- Toggle Dark/Light -->
+                    <button id="toggleTheme" class="btn btn-outline-light ms-3" aria-label="Alternar modo escuro/claro">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="mt-5 pt-5">
+
+        <!-- Banner -->
+        <section class="banner text-center text-light d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bem-vindo ao Portal de Robótica e IoT</h1>
+                <p class="lead">Um espaço para explorar nossas práticas, vídeos, dados e inovações em IoT.</p>
+                <a href="videos.html" class="btn btn-primary btn-lg mt-3">Ver Atividades</a>
+            </div>
+        </section>
+
+        <!-- Sobre o Projeto -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center"><i class="fas fa-info-circle"></i> Sobre o Projeto</h2>
+                <p>
+                    Este portal foi desenvolvido por equipes de estudantes que realizaram práticas em sala de aula
+                    na disciplina de IoT, utilizando robôs e sensores para coleta de dados como temperatura,
+                    umidade e velocidade. O objetivo é documentar e compartilhar essas experiências de forma acessível
+                    e interativa.
+                </p>
+            </div>
+        </section>
+
+        <!-- Notícias Recentes -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center"><i class="fas fa-newspaper"></i> Últimas Notícias</h2>
+                <div class="row g-4">
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <figure>
+                                <img src="img/robo1.jpg" class="card-img-top" alt="Robô em prática de IoT">
+                                <figcaption class="visually-hidden">Robô em prática com sensores</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Avanços na Robótica Educacional</h5>
+                                <p class="card-text">As práticas em laboratório destacam como a robótica pode
+                                    transformar o aprendizado dos alunos.</p>
+                                <a href="noticias.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <figure>
+                                <img src="img/iot.jpg" class="card-img-top" alt="Sensor IoT coletando dados">
+                                <figcaption class="visually-hidden">Sensor IoT em funcionamento</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">IoT no Cotidiano</h5>
+                                <p class="card-text">Exploramos como os sensores podem ser aplicados para resolver
+                                    problemas reais no dia a dia.</p>
+                                <a href="noticias.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <figure>
+                                <img src="img/graph.jpg" class="card-img-top" alt="Gráfico de dados IoT">
+                                <figcaption class="visually-hidden">Exemplo de gráfico de IoT</figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Visualização de Dados</h5>
+                                <p class="card-text">Gráficos interativos ajudam a compreender melhor os dados coletados
+                                    pelos sensores.</p>
+                                <a href="graficos.html" class="btn btn-outline-primary">Ver Gráficos</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 Portal de Robótica e IoT - Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle Dark/Light Mode
+        const themeToggle = document.getElementById("toggleTheme");
+        const themeIcon = document.getElementById("themeIcon");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            // Alterna ícone
+            if (document.body.classList.contains("dark-mode")) {
+                themeIcon.classList.remove("fa-moon");
+                themeIcon.classList.add("fa-sun");
+            } else {
+                themeIcon.classList.remove("fa-sun");
+                themeIcon.classList.add("fa-moon");
+            }
+             localStorage.setItem(themeKey, theme); 
+        });
+    </script>
+</body>
+
+</html>
